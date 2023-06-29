@@ -1,17 +1,9 @@
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
+// 다음과 같은 문자열 a:b:c:d가 있다. 문자열의 replace 함수를 사용하여 a#b#c#d로 바꿔서 출력해보자
 public class Main {
 	public static void main(String[] args) {
-		// Press Alt+Enter with your caret at the highlighted text to see how
-		// IntelliJ IDEA suggests fixing it.
-		System.out.printf("Hello and welcome!");
+		String a = "a:b:c:d";
+		a = a.replace(':', '#');
 
-		// Press Shift+F10 or click the green arrow button in the gutter to run the code.
-		for (int i = 1; i <= 5; i++) {
-
-			// Press Shift+F9 to start debugging your code. We have set one breakpoint
-			// for you, but you can always add more by pressing Ctrl+F8.
-			System.out.println("i = " + i);
-		}
+		System.out.println(a);
 	}
 }
