@@ -1,11 +1,10 @@
 package main
 
 import (
-	"fmt"
 	"bufio"
+	"fmt"
 	"os"
 )
-
 
 func main() {
 	var reader *bufio.Reader = bufio.NewReader(os.Stdin)
@@ -18,13 +17,13 @@ func main() {
 	var alphaMap = map[byte]int{}
 
 	// initialize
-	for i:='A'; i<='Z'; i++ {
+	for i := 'A'; i <= 'Z'; i++ {
 		alphaMap[byte(i)] = 0
 	}
 
-	for i:=0; i<len(strIn); i++ {
-		if('a' <= strIn[i] && strIn[i] <= 'z'){
-			alphaMap[byte(strIn[i]) - ('a' - 'A')]++
+	for i := 0; i < len(strIn); i++ {
+		if 'a' <= strIn[i] && strIn[i] <= 'z' {
+			alphaMap[byte(strIn[i])-('a'-'A')]++
 		} else {
 			alphaMap[byte(strIn[i])]++
 		}
@@ -34,14 +33,12 @@ func main() {
 	var maxString string
 	var maxCount int = 0
 	for key, value := range alphaMap {
-		if value < maxCount{
+		if value < maxCount {
 			continue
-		} else
-		if value > maxCount{
+		} else if value > maxCount {
 			maxString = string(key)
 			maxCount = value
-		} else
-		if value == maxCount{
+		} else if value == maxCount {
 			maxString = "?"
 		}
 	}

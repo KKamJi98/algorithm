@@ -7,7 +7,6 @@ import (
 	"os"
 )
 
-
 func main() {
 	var reader *bufio.Reader = bufio.NewReader(os.Stdin)
 	var writer *bufio.Writer = bufio.NewWriter(os.Stdout)
@@ -18,7 +17,7 @@ func main() {
 	fmt.Fscanln(reader, &strIn)
 
 	for _, alpha := range strIn {
-		if 'a' <= alpha && alpha <='z'{
+		if 'a' <= alpha && alpha <= 'z' {
 			alphaCount[alpha-'a']++
 		} else if 'A' <= alpha && alpha <= 'Z' {
 			alphaCount[alpha-'A']++
