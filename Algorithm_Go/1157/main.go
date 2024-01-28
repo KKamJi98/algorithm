@@ -6,7 +6,7 @@ import (
 	"os"
 )
 
-func main() {
+func first() {
 	var reader *bufio.Reader = bufio.NewReader(os.Stdin)
 	var writer *bufio.Writer = bufio.NewWriter(os.Stdout)
 	defer writer.Flush()
