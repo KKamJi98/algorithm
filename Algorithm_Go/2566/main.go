@@ -2,8 +2,8 @@
 package main
 
 import (
-	"fmt"
 	"bufio"
+	"fmt"
 	"os"
 )
 
@@ -13,7 +13,7 @@ func main() {
 	defer writer.Flush()
 
 	var maxRow, maxCol, maxValue int
-	
+
 	numMatrix := make([][]int, 9)
 	for i := range numMatrix {
 		numMatrix[i] = make([]int, 9)
