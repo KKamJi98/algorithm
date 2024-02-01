@@ -2,9 +2,9 @@
 package main
 
 import (
+	"bufio"
 	"fmt"
 	"os"
-	"bufio"
 	"strings"
 	// "strconv"
 )
@@ -29,6 +29,6 @@ func main() {
 				fmt.Fprintf(writer, string(stringArray[j][i]))
 			}
 		}
-		
+
 	}
 }
