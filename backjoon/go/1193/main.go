@@ -22,14 +22,30 @@ func main() {
 	numerator = 1
 	denominator = tmpNum
 	
-	for i := 1; i <= N; i++ {
-		if numerator == tmpNum {
-			tmpNum++
-			numerator = 1
-			denominator = tmpNum
-			continue
+	flag := false
+	for i := 1; i < N; i++ {
+		if flag {
+			if numerator == tmpNum {
+				tmpNum++
+				numerator = tmpNum
+				denominator = 1
+				flag = false
+				continue
+			}
+			numerator++
+			denominator--
+		} else {
+			if denominator == tmpNum {
+				tmpNum++
+                numerator = 1
+                denominator = tmpNum
+                flag = true
+                continue
+            }
+			numerator--
+			denominator++
 		}
-		numerator++
-		denominator--
 	}
+
+	fmt.Fprintf(writer, "%d/%d", numerator, denominator)
 }
