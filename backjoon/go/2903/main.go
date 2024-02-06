@@ -3,8 +3,8 @@ package main
 
 import (
 	"bufio"
-    "fmt"
-    "os"
+	"fmt"
+	"os"
 )
 
 func main() {
@@ -18,8 +18,8 @@ func main() {
 	arr := make([]int, N+1)
 	arr[0] = 2
 	arr[1] = 3 //9
-	for i := 1; i<=N; i++ {
-		arr[i] = arr[i-1] * 2 -1
+	for i := 1; i <= N; i++ {
+		arr[i] = arr[i-1]*2 - 1
 	}
 
 	fmt.Fprintf(writer, "%d\n", arr[N]*arr[N])

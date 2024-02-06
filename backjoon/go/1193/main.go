@@ -2,9 +2,9 @@
 package main
 
 import (
-    "bufio"
-    "fmt"
-    "os"
+	"bufio"
+	"fmt"
+	"os"
 )
 
 func main() {
@@ -16,12 +16,12 @@ func main() {
 	fmt.Fscan(reader, &N)
 
 	var numerator, denominator int // 분자, 분모
-	
+
 	var tmpNum int = 1
-	
+
 	numerator = 1
 	denominator = tmpNum
-	
+
 	flag := false
 	for i := 1; i < N; i++ {
 		if flag {
@@ -37,11 +37,11 @@ func main() {
 		} else {
 			if denominator == tmpNum {
 				tmpNum++
-                numerator = 1
-                denominator = tmpNum
-                flag = true
-                continue
-            }
+				numerator = 1
+				denominator = tmpNum
+				flag = true
+				continue
+			}
 			numerator--
 			denominator++
 		}

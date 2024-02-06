@@ -28,11 +28,11 @@ func getExchange(C int, writer *bufio.Writer) {
 	}
 
 	for C > 0 {
-		if C  == 0 {
+		if C == 0 {
 			break
 		}
 		for _, coin := range arr {
-			fmt.Fprintf(writer, "%d ", C / coin)
+			fmt.Fprintf(writer, "%d ", C/coin)
 			C = C % coin
 		}
 	}
