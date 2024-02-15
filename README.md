@@ -6,8 +6,7 @@ https://school.programmers.co.kr/learn/challenges
 
 
 ## in-progress
-- [ ] 정렬 단계 - https://www.acmicpc.net/step/9
-
+- [ ] 연결 리스트 - https://www.acmicpc.net/workbook/view/7308
 
 ## Complete
-- [ ] 브루트 포스 단계 - https://www.acmicpc.net/step/22
+- [x] 브루트 포스 단계 - https://www.acmicpc.net/step/22
