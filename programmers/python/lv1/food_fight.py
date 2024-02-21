@@ -6,8 +6,6 @@ def solution(food):
         quantity = food[i] // 2
         for j in range(quantity):
             answer += str(i)
-            
-    reverseAnswer = reversed(answer)
     return answer+"0"+answer[::-1]
 
 food = [1, 3, 4, 6]	
