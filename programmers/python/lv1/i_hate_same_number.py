@@ -6,9 +6,6 @@ def solution(arr):
     for i in range(len(arr)-1):
         if arr[i] != arr[i+1]:
             answer.append(arr[i+1])
-    # for i in range(len(arr)-1, 0, -1):
-    #     if arr[i] == arr[i-1]:
-    #         del arr[i]
     return answer
         
 arr = [1, 1, 3, 3, 0, 1, 1]
