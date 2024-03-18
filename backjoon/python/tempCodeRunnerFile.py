@@ -1,18 +1,23 @@
-# https://www.acmicpc.net/problem/15651 - N과M (3)
+# https://www.acmicpc.net/problem/15655 - [ N과 M (6) ]
+import sys
 
-def back_tracking(cur_idx, arr_in):
+N, M = map(int, sys.stdin.readline().rstrip().split())
+input_arr = list(map(int, sys.stdin.readline().rstrip().split()))
+input_arr.sort()
+
+arr = []
+used = [False] * N
+def back_tracking(cur_idx: int, arr_idx):
     if cur_idx == M:
-        print(*arr_in)
+        print(*arr)
         return
     
-    for i in range(1, N + 1):
-        arr_in.append(i)
-        back_tracking(cur_idx+1, arr_in)
-        arr_in.pop()
-    
+    for i in range(arr_idx, N):
+        # if used[i] == False:
+            arr.append(input_arr[i])
+            # used[i] = True
+            back_tracking(cur_idx + 1, arr_idx + i)
+            # used[i] = False
+            arr.pop()
 
-N, M = map(int, input().split())
-arr = list(range(1,N+1)) 
-
-back_tracking(0, [])
-# print(N, M)
+back_tracking(0, 0)
