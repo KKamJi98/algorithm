@@ -24,4 +24,4 @@ def back_tracking(arr, depth):
     back_tracking(arr, depth+1)
     arr.pop()
     
-back_tracking(deque(), 0)
+back_tracking(deque(), 0) 
