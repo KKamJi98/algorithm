@@ -1,4 +1,5 @@
 {
     "python.REPL.enableREPLSmartSend": false,
-    "cmake.sourceDirectory": "/root/Code/Algorithm/backjoon/c++/1002_Turret"
+    "cmake.sourceDirectory": "/root/Code/Algorithm/backjoon/c++/1002_Turret",
+    "python.analysis.typeCheckingMode": "off"
 }
