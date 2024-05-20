@@ -1,12 +1,14 @@
 # https://leetcode.com/problems/design-browser-history/description/
 
-# Intuition
+#! Intuition
 # I considered using either a list or a linked list.
 
-# Approach
+#! Approach
 # Initially, I considered using a list. However, since the visit function requires deleting all previous history, using a list would result in an O(n) time complexity for deletion. 
 # Therefore, I opted for a linked list. Given that in browser usage, the visit function is typically used more frequently than back or forward, I decided to use a linked list to solve the problem efficiently.
 
+#! Time complexity:
+# O(n)
 class Node:
     def __init__(self, val=0, next=None, prev=None):
         self.val = val
