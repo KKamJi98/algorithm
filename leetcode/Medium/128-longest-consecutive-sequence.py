@@ -20,7 +20,6 @@ class Solution:
                 max_count = max(max_count, cur_count)
                 cur_count = 1
             prev = cur_num
-            
         return max(max_count, cur_count)
     
 S = Solution()
