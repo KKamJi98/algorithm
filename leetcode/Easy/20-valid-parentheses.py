@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/valid-parentheses/description/
+# https://leetcode.com/problems/valid-parentheses
 
 #! Intuition
 # This problem was solved using the properties of the Stack data structure.
