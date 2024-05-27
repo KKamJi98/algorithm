@@ -1,4 +1,5 @@
 # https://leetcode.com/problems/maximum-depth-of-binary-tree
+# post-order
 
 from typing import Optional, List
 from collections import deque
@@ -12,22 +13,15 @@ class TreeNode:
 
 class Solution:
     def maxDepth(self, root: Optional[TreeNode]) -> int:
-        if root == None:
-            return 0
-        
-        q = deque()
         max_depth = 0
-        q.append((root, 1))
-        while q:
-            cur_node, cur_depth = q.popleft()
-            if cur_depth > max_depth:
-                max_depth = cur_depth
-                
-            if cur_node.left:
-                q.append((cur_node.left, cur_depth + 1))
-            if cur_node.right:
-                q.append((cur_node.right, cur_depth + 1))
-                
+        
+        if root == None:
+            return max_depth
+        
+        left_depth = self.maxDepth(root.left)
+        right_depth = self.maxDepth(root.right)
+        max_depth = max(left_depth, right_depth) + 1
+        
         return max_depth
             
 def build_tree_from_list(values: List[Optional[int]]) -> Optional[TreeNode]:
