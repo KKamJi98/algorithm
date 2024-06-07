@@ -23,7 +23,7 @@ class Solution:
         max_depth = max(left_depth, right_depth) + 1
         
         return max_depth
-            
+
 def build_tree_from_list(values: List[Optional[int]]) -> Optional[TreeNode]:
     if not values:
         return None
