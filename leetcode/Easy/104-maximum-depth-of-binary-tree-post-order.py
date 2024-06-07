@@ -49,7 +49,3 @@ values = [3, 9, 20, None, None, 15, 7]
 root = build_tree_from_list(values)
 sol = Solution()
 print(sol.maxDepth(root))  # Output: 3
-
-
-
-
