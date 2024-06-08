@@ -5,6 +5,8 @@
 from typing import List
 
 class Solution:
+    def __init__(self) -> None:
+        self.memo = {}
     def minCostClimbingStairs(self, cost: List[int]) -> int:
         min_cost = [0] * (len(cost) + 1)
         min_cost[0] = 0
@@ -14,6 +16,15 @@ class Solution:
             min_cost[i] = min(min_cost[i-1] + cost[i-1], min_cost[i-2] + cost[i-2])
             
         return min_cost[-1]
-            
+    
+    def top_down(self, cost: List[int], idx) -> int:
+        if idx == 0 or idx == 1:
+            return 0
+        if idx not in self.memo:
+            self.memo[idx] = min(self.top_down(cost, idx-1) + cost[idx-1], self.top_down(cost, idx-2) + cost[idx-2])
+        return self.memo[idx]
+    
 s = Solution()
-print(s.minCostClimbingStairs([1,100,1,1,1,100,1,1,100,1]))
+kkam_list = [1, 100, 1, 1, 1, 100, 1, 1, 100, 1]
+print(s.minCostClimbingStairs(kkam_list))
+print(s.top_down(kkam_list, len(kkam_list)))
