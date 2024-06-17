@@ -8,8 +8,7 @@ https://school.programmers.co.kr/learn/challenges
 # backjoon
 
 ## in-progress
-- [ ] 백트래킹 - https://www.acmicpc.net/workbook/view/7315 - [ N과 M (11)까지 ]
-
+- [x] 백트래킹 - https://www.acmicpc.net/workbook/view/7315
 ## Complete
 - [x] 큐 - https://www.acmicpc.net/workbook/view/7310
 - [x] 스택 - https://www.acmicpc.net/workbook/view/7309 - [스택 수열까지]
@@ -20,7 +19,7 @@ https://school.programmers.co.kr/learn/challenges
     현재
     - lv2
 ## in-progress
-- [ ] 광물 캐기 - https://school.programmers.co.kr/learn/courses/30/lessons/172927
+- [x] 광물 캐기 - https://school.programmers.co.kr/learn/courses/30/lessons/172927
 ## Complate
 - [x] 과제 진행하기 - https://school.programmers.co.kr/learn/courses/30/lessons/176962
 - [x] 연속된 부분 수열의 합 - https://school.programmers.co.kr/learn/courses/30/lessons/178870
