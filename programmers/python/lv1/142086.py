@@ -17,6 +17,6 @@ def solution(s):
             answer[cur_idx] = cur_idx - dict[s[cur_idx]]
         dict[s[cur_idx]] = cur_idx
     print(answer)
-    return answer
+    return answer 
 
 solution("banana")
