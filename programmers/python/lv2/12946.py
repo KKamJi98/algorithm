@@ -5,9 +5,11 @@ def solution(n):
     def hanoi(n, start, end, via):
         if n == 1:
             answer.append([start, end])
+            print(f"move {start} to {end}")
             return
         
         hanoi(n-1, start, via, end)
+        print(f"move {start} to {end}")
         answer.append([start, end])
         hanoi(n-1, via, end, start)
             
