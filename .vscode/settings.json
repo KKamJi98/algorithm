@@ -1,5 +1,13 @@
 {
     "python.REPL.enableREPLSmartSend": false,
     "cmake.sourceDirectory": "/root/Code/Algorithm/backjoon/c++/1002_Turret",
-    "python.analysis.typeCheckingMode": "off"
+    "python.analysis.typeCheckingMode": "off",
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    "[python]": {
+        "editor.tabSize": 4,
+        "editor.insertSpaces": true
+    },
+    "python.formatting.provider": "autopep8",
+    "python.formatting.autopep8Args": ["--indent-size=4"]
 }
