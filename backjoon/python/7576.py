@@ -18,12 +18,18 @@ for r in range(len(tomatos)):
 days = 0
 
 while Q:
-    mv = [[1,0], [-1,0], [0,-1], [0,1]]
+    mv = [[1, 0], [-1, 0], [0, -1], [0, 1]]
     curRow, curCol = Q.popleft()
     for mvRow, mvCol in mv:
         nextRow = curRow + mvRow
         nextCol = curCol + mvCol
-        if nextRow < 0 or nextRow >= row or nextCol < 0 or nextCol >= col or tomatos[nextRow][nextCol] != 0:
+        if (
+            nextRow < 0
+            or nextRow >= row
+            or nextCol < 0
+            or nextCol >= col
+            or tomatos[nextRow][nextCol] != 0
+        ):
             continue
         Q.append((nextRow, nextCol))
         tomatos[nextRow][nextCol] = 1

@@ -1,5 +1,6 @@
 # https://www.acmicpc.net/problem/3986 - [ 좋은 단어 ]
 
+
 def solution(myStr: str) -> bool:
     stack = list()
     for i in myStr:
@@ -11,7 +12,7 @@ def solution(myStr: str) -> bool:
         return True
     else:
         return False
-    
+
 
 N = int(input())
 
@@ -19,5 +20,5 @@ count = 0
 for i in range(N):
     myStr = input()
     count += 1 if solution(myStr) else 0
-        
+
 print(count)

@@ -1,6 +1,7 @@
 # https://school.programmers.co.kr/learn/courses/30/lessons/160586 - [ 대충 만든 자판 ]
 import sys
 
+
 def solution(keymap, targets):
     answer = []
     for target in targets:
@@ -24,7 +25,8 @@ def solution(keymap, targets):
         else:
             answer.append(totalCount)
     return answer
-    
+
+
 keymap = ["AA"]
 targets = ["B"]
 print(solution(keymap, targets))

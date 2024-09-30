@@ -10,11 +10,11 @@ for i in reversed(range(N)):
     for j in reversed(range(i)):
         curHeight = kkamList[i]
         if kkamList[j] >= curHeight:
-            stack.append(j+1)
+            stack.append(j + 1)
             break
         if j == 0:
             stack.append(0)
-            
+
 stack.append(0)
 
 while len(stack) > 0:

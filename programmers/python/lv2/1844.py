@@ -36,14 +36,20 @@ def solution(maps):
                 continue
             visit[next_row][next_col] = visit[cur_row][cur_col] + 1
             q.append([next_row, next_col])
-    if visit[max_row-1][max_col-1] == 0:
+    if visit[max_row - 1][max_col - 1] == 0:
         return -1
     else:
-        return visit[max_row-1][max_col-1]
+        return visit[max_row - 1][max_col - 1]
 
 
-print(solution([[1, 0, 1, 1, 1],
-                [1, 0, 1, 0, 1],
-                [1, 0, 1, 1, 1],
-                [1, 1, 1, 0, 1],
-                [0, 0, 0, 0, 1]]))
+print(
+    solution(
+        [
+            [1, 0, 1, 1, 1],
+            [1, 0, 1, 0, 1],
+            [1, 0, 1, 1, 1],
+            [1, 1, 1, 0, 1],
+            [0, 0, 0, 0, 1],
+        ]
+    )
+)

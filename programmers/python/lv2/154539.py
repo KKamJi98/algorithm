@@ -1,5 +1,6 @@
 # https://school.programmers.co.kr/learn/courses/30/lessons/154539 - [ 뒤에 있는 큰 수 찾기 ]
 
+
 # O(n^2) => 시간초과의 지름길
 def solution(numbers):
     result = [-1] * len(numbers)  # 결과 배열을 -1로 초기화
@@ -14,5 +15,5 @@ def solution(numbers):
 
     return result
 
-print(solution([9, 1, 5, 3, 6, 2]))
 
+print(solution([9, 1, 5, 3, 6, 2]))

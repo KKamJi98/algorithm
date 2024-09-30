@@ -4,10 +4,10 @@ from collections import deque
 
 
 def solution(numbers, target):
-    '''
+    """
     1. 첫 번째 인덱스부터 시작 +, - 큐에 추가
     2. 오른쪽 인덱스 +, - 큐에 추가 --- bfs
-    '''
+    """
 
     q = deque()
     result = 0

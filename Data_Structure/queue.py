@@ -37,4 +37,3 @@ priority_q.put((3, "lowest priority"))
 # 우선순위 큐에서 항목 제거
 item1 = priority_q.get()  # (1, "high priority")
 item2 = priority_q.get()  # (2, "low priority")
-

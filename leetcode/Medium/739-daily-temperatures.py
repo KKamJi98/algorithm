@@ -2,6 +2,7 @@
 
 from typing import List
 
+
 class Solution:
     def dailyTemperatures(self, temperatures: List[int]) -> List[int]:
         ans = [0] * len(temperatures)
@@ -13,5 +14,6 @@ class Solution:
             stack.append([cur_day, cur_temp])
         return ans
 
+
 S = Solution()
-print(S.dailyTemperatures([73,74,75,71,69,72,76,73]))
+print(S.dailyTemperatures([73, 74, 75, 71, 69, 72, 76, 73]))

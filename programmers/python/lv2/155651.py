@@ -1,5 +1,6 @@
 # https://school.programmers.co.kr/learn/courses/30/lessons/155651 - [ 호텔 대실 ]
 
+
 def solution(book_time):
     """
     1. 예약시간이 빠른 순서대로 예약 정렬
@@ -33,7 +34,11 @@ def solution(book_time):
             check_out_min -= 60
             check_out_hour += 1
         for idx, book in enumerate(book_arr):
-            if check_in_hour > book[0] or check_in_hour == book[0] and check_in_min >= book[1]:
+            if (
+                check_in_hour > book[0]
+                or check_in_hour == book[0]
+                and check_in_min >= book[1]
+            ):
                 book_arr[idx] = [check_out_hour, check_out_min]
                 flag = True
                 break

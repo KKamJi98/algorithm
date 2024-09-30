@@ -4,13 +4,14 @@ def solution(t, p):
         if int(t_sub) <= int(p):
             return True
         return False
-    
+
     result = []
-    for idx in range(0, len(t)-len(p)+1):
-        tmp = t[idx:idx+len(p)]
+    for idx in range(0, len(t) - len(p) + 1):
+        tmp = t[idx : idx + len(p)]
         if sub_string_checker(tmp):
             result.append(tmp)
-    
+
     return len(result)
 
-print(solution("500220839878", "7")) # result = 2
+
+print(solution("500220839878", "7"))  # result = 2

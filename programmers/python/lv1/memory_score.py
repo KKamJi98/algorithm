@@ -3,7 +3,7 @@ def solution(name, yearning, photo):
     answer = list()
     for i in photo:
         score = 0
-        for j in range (len(i)):
+        for j in range(len(i)):
             try:
                 idx = name.index(i[j])
                 score += yearning[idx]
@@ -13,7 +13,11 @@ def solution(name, yearning, photo):
     return answer
 
 
-name = ["may", "kein", "kain", "radi"]	
+name = ["may", "kein", "kain", "radi"]
 yearning = [5, 10, 1, 3]
-photo = [["may", "kein", "kain", "radi"],["may", "kein", "brin", "deny"], ["kon", "kain", "may", "coni"]]
+photo = [
+    ["may", "kein", "kain", "radi"],
+    ["may", "kein", "brin", "deny"],
+    ["kon", "kain", "may", "coni"],
+]
 solution(name, yearning, photo)

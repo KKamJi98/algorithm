@@ -10,11 +10,11 @@ for j in range(T):
     commands = sys.stdin.readline().rstrip()
     n = int(sys.stdin.readline().rstrip())
     data = sys.stdin.readline().rstrip()[1:-1]
-    arr = deque(data.split(',')) if n > 0 else deque()
-    
+    arr = deque(data.split(",")) if n > 0 else deque()
+
     error = False
     reverse = False
-        
+
     for command in commands:
         if command == "R":
             reverse = not reverse
@@ -26,11 +26,10 @@ for j in range(T):
                 arr.pop()
             else:
                 arr.popleft()
-        
+
     if error:
-        print('error')
+        print("error")
     else:
         if reverse:
             arr.reverse()
         print("[" + ",".join(arr) + "]")
-    

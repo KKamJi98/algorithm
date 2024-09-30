@@ -9,17 +9,19 @@ numbers = sorted(list(map(int, sys.stdin.readline().split())))
 last_pop = -1
 arr = deque()
 
+
 def solutions(depth, start):
     global last_pop
     if depth == m:
         print(*arr)
         return
-        
+
     for i in range(start, len(numbers)):
         if last_pop == numbers[i]:
             continue
         arr.append(numbers[i])
         solutions(depth + 1, i)
         last_pop = arr.pop()
+
 
 solutions(0, 0)

@@ -3,7 +3,7 @@ from typing import List
 
 
 class Solution:
-    # 시간 초과 O(n^2) 
+    # 시간 초과 O(n^2)
     def solution_ver1(self, nums: List[int]) -> int:
         nums_dict = {}
         new_nums = []
@@ -26,6 +26,7 @@ class Solution:
                 new_nums.remove(i)
 
         return count
+
     # greedy O(nlogn)
     def minIncrementForUnique(self, nums: List[int]) -> int:
         nums.sort()

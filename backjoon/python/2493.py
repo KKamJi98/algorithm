@@ -12,16 +12,16 @@ for i in reversed(range(N)):
     if len(kkamStack) == 0:
         kkamStack.append([kkamList[i], i])
         continue
-        
+
     if kkamList[i] >= kkamStack[-1][0]:
-        while(len(kkamStack) > 0 and kkamStack[-1][0] <= kkamList[i]):
+        while len(kkamStack) > 0 and kkamStack[-1][0] <= kkamList[i]:
             value, idx = kkamStack.pop()
             result[idx] = i
 
     kkamStack.append([kkamList[i], i])
-        
+
 for i in result:
     if i == -1:
-        print(0, end=' ')
+        print(0, end=" ")
     else:
-        print(i+1, end=' ')
+        print(i + 1, end=" ")

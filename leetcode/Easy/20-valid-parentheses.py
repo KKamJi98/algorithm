@@ -7,22 +7,24 @@
 # To reduce the amount of code, when '(' appears, ')' is added to the stack, when '{' appears, '}' is added, and when '[' appears, ']' is added to the stack.
 
 #! Time complexity:
-# O(n) 
+# O(n)
+
 
 class Solution:
     def isValid(self, s: str) -> bool:
         stack = []
         for p in s:
-            if p == '(':
-                stack.append(')')
-            elif p == '{':
-                stack.append('}')
-            elif p == '[':
-                stack.append(']')
+            if p == "(":
+                stack.append(")")
+            elif p == "{":
+                stack.append("}")
+            elif p == "[":
+                stack.append("]")
             else:
                 if not stack or stack.pop() != p:
                     return False
         return not stack
-    
+
+
 S = Solution()
-print(S.isValid('['))
+print(S.isValid("["))

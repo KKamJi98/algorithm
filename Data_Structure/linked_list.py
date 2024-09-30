@@ -64,7 +64,7 @@ class LinkedList(object):
         if idx == 0:
             self.head = self.head.next
         else:
-            cur_node = self.get_node(idx-1)
+            cur_node = self.get_node(idx - 1)
             if cur_node.next == None:
                 print("index out of range")
                 return

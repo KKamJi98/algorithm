@@ -2,20 +2,20 @@
 import sys
 from collections import deque
 
+
 def backTracking(cur_idx: int):
     if cur_idx == M:
         print(*arr)
         return
-    
-    for i in range(1, N+1):
+
+    for i in range(1, N + 1):
         if not check[i]:
             arr.append(i)
             check[i] = True
-            backTracking(cur_idx+1)
+            backTracking(cur_idx + 1)
             check[i] = False
             arr.pop()
-    
-    
+
 
 N, M = map(int, sys.stdin.readline().rstrip().split())
 arr = []

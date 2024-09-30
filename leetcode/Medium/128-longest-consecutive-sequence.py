@@ -2,6 +2,7 @@
 
 from typing import List
 
+
 class Solution:
     def longestConsecutive(self, nums: List[int]) -> int:
         if len(nums) == 0:
@@ -21,6 +22,7 @@ class Solution:
                 cur_count = 1
             prev = cur_num
         return max(max_count, cur_count)
-    
+
+
 S = Solution()
-print(S.longestConsecutive([0,3,7,2,5,8,4,6,0,1]))
+print(S.longestConsecutive([0, 3, 7, 2, 5, 8, 4, 6, 0, 1]))

@@ -2,26 +2,36 @@
 
 import sys
 
+
 def push(stack, int):
     stack.append(int)
+
+
 def size(stack) -> int:
     return len(stack)
+
+
 def empty(stack) -> int:
     if len(stack) == 0:
         return 1
     else:
         return 0
+
+
 def top(stack) -> int:
     if empty(stack) == 0:
-        return stack[len(stack)-1]
+        return stack[len(stack) - 1]
     else:
         return -1
+
+
 def pop(stack) -> int:
     if empty(stack) == 1:
         print(-1)
     else:
         print(stack.pop())
-    
+
+
 def solution(N):
     stack = []
     for i in range(N):
@@ -39,7 +49,7 @@ def solution(N):
             print(top(stack))
         else:
             print("error")
-    
-    
+
+
 N = int(sys.stdin.readline())
-solution(N)    
+solution(N)

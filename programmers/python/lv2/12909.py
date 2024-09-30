@@ -1,9 +1,10 @@
 # https://school.programmers.co.kr/learn/courses/30/lessons/12909 - [ 올바른 괄호 ]
 
+
 # O(n)
 def solution(s):
     stack = []
-    
+
     answer = True
     for i in s:
         if i == "(":
@@ -13,10 +14,11 @@ def solution(s):
                 stack.pop()
             elif len(stack) == 0:
                 return False
-    if len(stack) == 0 :
+    if len(stack) == 0:
         return True
-    else:    
+    else:
         return False
+
 
 result = solution("))")
 print(result)

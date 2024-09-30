@@ -15,7 +15,7 @@ class Solution:
         costs = {}
         pq = []
         heapq.heappush(pq, (0, k))
-        
+
         # dijkstra
         while pq:
             cur_cost, cur_node = heapq.heappop(pq)
@@ -24,12 +24,13 @@ class Solution:
                 for cost, next_node in graph[cur_node]:
                     next_cost = cur_cost + cost
                     heapq.heappush(pq, (next_cost, next_node))
-                    
+
         for node in range(1, n + 1):
             if node not in costs:
                 return -1
-        
+
         return max(costs.values())
 
+
 s = Solution()
-print(s.networkDelayTime([[2,1,1],[2,3,1],[3,4,1]], 4, 2))
+print(s.networkDelayTime([[2, 1, 1], [2, 3, 1], [3, 4, 1]], 4, 2))
