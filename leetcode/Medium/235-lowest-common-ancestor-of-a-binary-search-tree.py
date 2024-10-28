@@ -13,7 +13,7 @@ class Solution:
     def lowestCommonAncestor(
         self, root: "TreeNode", p: "TreeNode", q: "TreeNode"
     ) -> "TreeNode":
-        
+
         def binary_search(cur_node):
             if p.val <= cur_node.val <= q.val:
                 return cur_node
