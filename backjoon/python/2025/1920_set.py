@@ -1,3 +1,4 @@
+# https://www.acmicpc.net/problem/1920 - 수 찾기 (Silver 4)
 # set을 사용해 중복 제거
 
 n = int(input())

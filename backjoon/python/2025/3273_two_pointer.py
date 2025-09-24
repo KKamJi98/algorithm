@@ -1,5 +1,5 @@
 # https://www.acmicpc.net/problem/3273 - 두 수의 합 (Silver 3)
-# Two Pointer 를 사용해 O(n) 구현
+# Two Pointer - O(n)
 
 n = int(input())
 arr = sorted(list(map(int, input().split())))
