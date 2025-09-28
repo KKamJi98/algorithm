@@ -8,7 +8,7 @@ cnt = 0
 i = 0
 
 while i <= len(input_string) - len(input_word):
-    if input_string[i:i+len(input_word)] == input_word:
+    if input_string[i : i + len(input_word)] == input_word:
         cnt += 1
         i += len(input_word)
     else:

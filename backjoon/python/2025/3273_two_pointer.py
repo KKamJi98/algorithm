@@ -6,7 +6,7 @@ arr = sorted(list(map(int, input().split())))
 x = int(input())
 
 cnt = 0
-l, r = 0, n-1
+l, r = 0, n - 1
 
 while l < r:
     s = arr[l] + arr[r]
@@ -18,5 +18,5 @@ while l < r:
         l += 1
     else:
         r -= 1
-        
+
 print(cnt)

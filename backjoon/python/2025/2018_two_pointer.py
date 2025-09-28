@@ -17,7 +17,7 @@ while start <= n:
         if end > n:
             break
         total += end
-    else: #total > n
+    else:  # total > n
         total -= start
         start += 1
 

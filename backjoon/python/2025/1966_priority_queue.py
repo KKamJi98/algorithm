@@ -8,20 +8,20 @@ input = sys.stdin.readline
 
 test_case = int(input())
 
-for _ in range (test_case):
+for _ in range(test_case):
     n, m = map(int, input().strip().split())
     test_arr = list(map(int, input().strip().split()))
-    
+
     q = deque([(i, p) for i, p in enumerate(test_arr)])
-    
+
     max_heap = [-p for p in test_arr]
     heapq.heapify(max_heap)
-    
+
     count = 0
-    
+
     while q:
         idx, priority = q.popleft()
-        
+
         if priority == -max_heap[0]:
             heapq.heappop(max_heap)
             count += 1

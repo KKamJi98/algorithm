@@ -11,15 +11,15 @@ n = int(input().strip())
 outputs = []
 min_heap = []
 
-for _ in range (n):
+for _ in range(n):
     input_number = int(input().strip())
-    
+
     if input_number == 0:
         if not min_heap:
-            outputs.append('0')
+            outputs.append("0")
         else:
             outputs.append(str(heapq.heappop(min_heap)))
     else:
         heapq.heappush(min_heap, input_number)
-        
+
 print("\n".join(outputs))

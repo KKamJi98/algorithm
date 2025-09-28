@@ -8,6 +8,6 @@ arr_m = list(map(int, input().split()))
 
 out = []
 for x in arr_m:
-    out.append("1" if x in arr_n else '0')
-    
-print('\n'.join(out))
+    out.append("1" if x in arr_n else "0")
+
+print("\n".join(out))
