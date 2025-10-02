@@ -1,5 +1,5 @@
 # https://www.acmicpc.net/problem/1931 - 회의실 배정 (Gold 5)
-
+# Greedy
 import sys
 
 input = sys.stdin.readline
